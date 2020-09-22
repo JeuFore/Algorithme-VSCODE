@@ -1,0 +1,30 @@
+{
+    "scopeName": "source.algo",
+    "patterns": [
+        {
+            "include": "#paren-expression"
+        }
+    ],
+    "repository": {
+        "paren-expression": {
+            "begin": "fonction",
+            "end": "\\)",
+            "beginCaptures": {
+                "0": {
+                    "name": "entity.name.type"
+                }
+            },
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.paren.close"
+                }
+            },
+            "name": "keyword.control",
+            "patterns": [
+                {
+                    "include": "#expression"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,93 @@
+{
+    "main": {
+        "prefix": "main",
+        "body": [
+            "public void main",
+            "test"
+        ]
+    },
+    "Algorithme": {
+        "prefix": "algorithme",
+        "body": [
+            "algorithme",
+            "début",
+            "\t$0",
+            "fin"
+        ]
+    },
+    "Fonction": {
+        "prefix": "fonction",
+        "body": [
+            "fonction name()",
+            "début",
+            "\t$0",
+            "fin"
+        ]
+    },
+    "Si": {
+        "prefix": "si",
+        "body": [
+            "si condition alors",
+            "\t$0",
+            "fsi"
+        ]
+    },
+    "Sinon" : {
+        "prefix": "sin",
+        "body": [
+            "si condition alors",
+            "\t$0",
+            "sinon",
+            "\t",
+            "fsi"
+        ]
+    },
+    "Pour": {
+        "prefix": "pour",
+        "body": [
+            "pour i de 1 à variable faire",
+            "\t$0",
+            "fpour"
+        ]
+    },
+    "Pourc": {
+        "prefix": "pourc",
+        "body": [
+            "pour chaque variable faire",
+            "\t$0",
+            "fpour"
+        ]
+    },
+    "Tant": {
+        "prefix": "tant",
+        "body": [
+            "tant que condition faire",
+            "\t$0",
+            "ftant"
+        ]
+    },
+    "Entier": {
+        "prefix": "entier",
+        "body": "entier"
+    },
+    "Booleen": {
+        "prefix": "booléen",
+        "body": "booléen"
+    },
+    "Caractere": {
+        "prefix": "réel",
+        "body": "réel"
+    },
+    "Reel": {
+        "prefix": "réel",
+        "body": "réel"
+    },
+    "Chaine": {
+        "prefix": "chaîne",
+        "body": "chaîne"
+    },
+    "Ecrire": {
+        "prefix": "écrire",
+        "body": "écrire($0)"
+    }
+}

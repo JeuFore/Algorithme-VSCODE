@@ -1,0 +1,46 @@
+{
+    "name": "algosupport",
+    "displayName": "AlgoSupport",
+    "description": "",
+    "author": {
+        "name": "JeuFore"
+    },
+    "version": "0.0.1",
+    "publisher": "JeuFore",
+    "engines": {
+        "vscode": "^1.48.0"
+    },
+    "categories": [
+        "Snippets",
+        "Formatters"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "Algorithme",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ],
+        "languages": [
+            {
+                "id": "Algorithme",
+                "extensions": [
+                    ".algo"
+                ]
+            }
+        ],
+        "grammars": [
+            {
+                "language": "Algorithme",
+                "scopeName": "source.algo",
+                "path": "./syntaxes/algo.tmLanguage.json",
+                "injectTo": ["source.algo"]
+            }
+        ],
+        "__metadata": {
+            "id": "",
+            "publisherDisplayName": "JeuFore",
+            "publisherId": ""
+        }
+    }
+}

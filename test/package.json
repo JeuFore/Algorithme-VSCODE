@@ -1,0 +1,25 @@
+{
+    "name": "test",
+    "displayName": "test",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.48.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "test",
+            "aliases": ["", "test"],
+            "extensions": [".test"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "test",
+            "scopeName": "",
+            "path": "./syntaxes/test.tmLanguage.json"
+        }]
+    }
+}

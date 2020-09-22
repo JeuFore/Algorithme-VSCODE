@@ -1,0 +1,20 @@
+{
+	"name": "Algorithme",
+	"type": "dark",
+	"tokenColors": [
+		{
+			"name": "keywords",
+			"scope": "keywords.underline",
+			"settings": {
+				"fontStyle": "underline"
+			}
+		},
+		{
+			"name": "keywords",
+			"scope": "keywords.test",
+			"settings": {
+				"foreground": "#e5c07b"
+			}
+		}
+	]
+}

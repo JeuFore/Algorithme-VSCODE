@@ -1,0 +1,88 @@
+{
+	"scopeName": "source.algo",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#variables"
+		},
+		{
+			"include": "#todo-keyword"
+		},
+		{
+			"include": "#fonction"
+		},
+		{
+			"include": "#condition"
+		},
+		{
+			"include": "#chaine"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "markup.underline.link.markdown, entity.other.attribute-name.js",
+					"match": "\\b(algorithme|algo|début|fin)\\b"
+				},
+				{
+					"name": "markup.underline.link.markdown, keyword.control",
+					"match": "\\b(sinon|alors|fsi|ftant|fpour|faire|retourne)\\b"
+				},
+				{
+					"name": "entity.name.function",
+					"match": "\\b(écrire)\\b"
+				},
+				{
+					"name": "keyword.function",
+					"match": "<-"
+				}
+			]
+		},
+		"variables": {
+			"patterns": [
+				{
+					"name": "markup.underline.link.markdown, entity.name.type",
+					"match": "\\b(entier|réel|booléen|caractère|chaîne)\\b"
+				}
+			]
+		},
+		"fonction": {
+			"captures": {
+				"1": {
+					"name": "markup.underline.link.markdown"
+				},
+				"2": {
+					"name": "entity.name.function"
+				}
+			},
+			"match": "(?i)^\\s*(fonction)\\s+\"?([-a-z0-9_]+)\"?",
+			"name": "keyword.function"
+		},
+		"condition": {
+			"captures": {
+				"1": {
+					"name": "markup.underline.link.markdown"
+				},
+				"2": {
+					"name": "entity.other.attribute-name.js"
+				}
+			},
+			"match": "(?i)^\\s*(si|pour chaque|pour|tant que)\\s+\"?([-a-z0-9_]+)\"?",
+			"name": "keyword.control"
+		},
+		"chaine": {
+			"name": "constant.character",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.algo-aix",
+					"match": "\\\\."
+				}
+			]
+		}
+	}
+}
